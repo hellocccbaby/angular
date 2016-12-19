@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body ng-controller="myCtrl">
+		<select name="" ng-model="car">
+			<option value="宝马">宝马</option>
+			<option value="奔驰">奔驰</option>
+			<option value="奥迪">奥迪</option>
+		</select>
+		您选的是{{car}}车
+		<input type="" name="" id="" value="" ng-model="inpp"/>{{inpp}}
+	</body>
+	<script src="libs/angular.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		//html ng-app = "myApp"--对应，[]指代的意思是我们后续需要注入的各个模块
+		var app = angular.module("myApp",[]);
+		app.controller("myCtrl",function($scope){   //$scope相当于this
+			$scope.userName = "zz1611";
+		});
+		/*app.module("car",function(){
+			
+		})*/
+	</script>
+</html>
